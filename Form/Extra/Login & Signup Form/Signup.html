@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="Signup.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Signup</div>
+        <form action="#">
+            <div class="User-Details">
+                <div class="input-box">
+                    <span class="details"> Email </span>
+                    <input type="email" placeholder="Enter Your Email" required>
+                </div>
+                <div class="input-box">
+                    <span class="details"> Username </span>
+                    <input type="name" placeholder="Enter Username" required>
+                </div>
+                <div class="input-box">
+                    <span class="details"> Create Password </span>
+                    <input type="password" placeholder="Create password" required>
+                </div>
+                <div class="input-box">
+                    <span class="details"> Confirm Password </span>
+                    <input type="password" placeholder="Confirm password" required>
+                </div>
+            </div>
+            <div class="Gender-Details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <span class="Gender-Title">Gender</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Male</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">Female</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="gender">Prefer not to say</span>
+                    </label>
+                </div>
+            </div>
+            <div class="policy-text">
+                <input type="checkbox" id="policy">
+                <label for="policy">
+                    I agree the
+                    <a href="#" class="option">Terms & Conditions</a>
+                </label>
+            </div>
+            <div class="button">
+                <input type="submit" value="Signup">
+            </div>
+            <div class="bottom-link">
+                Already have an account?
+                <a href="login.html" id="Login-link">Login</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

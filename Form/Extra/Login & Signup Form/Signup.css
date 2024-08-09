@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #1873eb;
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 85px;
+    background: linear-gradient(135deg, #1873eb, #9b59b6);
+}
+
+.container form .User-Details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .User-Details .input-box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.User-Details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.User-Details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.User-Details .input-box input:focus,
+.User-Details .input-box input:valid {
+    border-color: #9b59b6;
+}
+
+form .Gender-Details .Gender-Title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .Gender-Details .category {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+.Gender-Details .category label {
+    display: flex;
+    align-items: center;
+}
+
+.Gender-Details .category .dot {
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+}
+
+#dot-1:checked~.category label .one,
+#dot-2:checked~.category label .two,
+#dot-3:checked~.category label .three {
+    border-color: #d9d9d9;
+    background: #9b59b6;
+}
+
+form input[type="radio"] {
+    display: none;
+}
+
+form :where(.forgot-pass-link, .policy-text) {
+    display: inline-flex;
+    margin-top: 5px;
+    font-size: 0.95rem;
+}
+
+form .button {
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #1873eb, #9b59b6);
+}
+
+form .button input:hover {
+    background: linear-gradient(-135deg, #1873eb, #9b59b6);
+}
+
+.bottom-link {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+@media (max-width:584px) {
+    .container {
+        max-width: 100%;
+    }
+
+    form .User-Details .input-box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    form .Gender-Details .category {
+        width: 100%;
+    }
+
+    .container form .User-Details {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+    .User-Details::-webkit-scrollbar {
+        width: 0;
+    }
+}

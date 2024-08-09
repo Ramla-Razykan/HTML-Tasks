@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        *{
+            background: #000000;
+            color: rgb(253, 253, 253);
+        }
+        #ta{
+       border-color: rgb(16, 59, 3);
+        }
+        #td{
+       border-color: rgb(46, 91, 121);
+        }
+    </style>
+</head>
+<body>
+    <h1>Task3</h1>
+    <table border="1" id="td">
+        <tbody>
+            <tr>
+                <td>Table 1</td>
+                <td>Table 1
+                    <table border="1"  id="ta">
+                        <tr>
+                            <td>Table 2</td>
+                            <td>Table 2</td>
+                        </tr>
+                        <tr>
+                            <td>Table 2</td>
+                            <td>Table 2</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>Table 1</td>
+                <td>Table 1</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
